@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const ContactList = ({ filterBook, onRemove }) => (
   <ul>
     {filterBook.map((contact, index) => (
-      <ContactCard con={contact} onRemove={onRemove} index={index} />
+      <ContactCard con={contact} onRemove={onRemove} index={index} key={index} />
     ))}
   </ul>
 );
